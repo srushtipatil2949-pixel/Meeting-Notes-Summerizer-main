@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Briefly — AI-Powered Meeting Notes</title>
+    <meta name="description" content="Transform your meeting transcripts into organized, professional notes instantly with AI. Powered by LLaMA 3.3.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <!-- ========== NAVIGATION ========== -->
+    <nav class="nav-bar" id="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand" aria-label="Briefly home">
+                <svg class="nav-logo" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="32" height="32" rx="8" fill="currentColor" opacity="0.1"/>
+                    <path d="M10 8h8a5 5 0 0 1 0 10h-8V8Z" fill="currentColor"/>
+                    <path d="M10 18h9a5 5 0 0 1 0 10h-9V18Z" fill="currentColor" opacity="0.7"/>
+                </svg>
+                <span>Briefly</span>
+            </a>
+            
+            <ul class="nav-links">
+                <li><a href="index.html#features" class="nav-link">Features</a></li>
+                <li><a href="index.html#templates" class="nav-link">Templates</a></li>
+                <li><a href="index.html#pricing" class="nav-link">Pricing</a></li>
+                <li><a href="https://github.com" target="_blank" rel="noopener" class="nav-link">GitHub</a></li>
+            </ul>
+            
+            <a href="services.html" class="nav-cta">
+                Services
+                <i data-lucide="arrow-right" style="width: 16px; height: 16px;"></i>
+            </a>
+        </div>
+    </nav>
+
+    <!-- ========== SERVICES HUB ========== -->
+    <section class="services-hub" id="services">
+        <div class="services-header">
+            <div class="hero-eyebrow">
+                <i data-lucide="layers" style="width: 14px; height: 14px;"></i>
+                <span>Choose Your Tool</span>
+            </div>
+            <h1 class="hero-headline">Our Services</h1>
+            <p class="hero-description">
+                Select from our suite of AI-powered tools designed to streamline your workflow and boost productivity.
+            </p>
+        </div>
+        
+        <div class="services-grid">
+            <!-- Active Service -->
+            <a href="meeting-notes.html" class="service-card active-service">
+                <div class="service-icon-wrapper">
+                    <i data-lucide="file-audio" style="width: 28px; height: 28px;"></i>
+                </div>
+                <h3 class="service-title">Meeting Notes Summarizer</h3>
+                <p class="service-desc">Transform meeting transcripts into organized, professional notes instantly.</p>
+                <div class="service-action">
+                    <span>Open Tool</span>
+                    <i data-lucide="arrow-right" style="width: 16px; height: 16px;"></i>
+                </div>
+            </a>
+            
+            <!-- Service 2: Email Thread Summarizer -->
+            <a href="email-summarizer.html" class="service-card active-service">
+                <div class="service-icon-wrapper">
+                    <i data-lucide="mail" style="width: 28px; height: 28px;"></i>
+                </div>
+                <h3 class="service-title">Email Thread Summarizer</h3>
+                <p class="service-desc">Condense long email chains into key points and action items.</p>
+                <div class="service-action">
+                    <span>Open Tool</span>
+                    <i data-lucide="arrow-right" style="width: 16px; height: 16px;"></i>
+                </div>
+            </a>
+            
+            <!-- Service 3: Document Analyzer -->
+            <a href="document-analyzer.html" class="service-card active-service">
+                <div class="service-icon-wrapper">
+                    <i data-lucide="file-search" style="width: 28px; height: 28px;"></i>
+                </div>
+                <h3 class="service-title">Document Analyzer</h3>
+                <p class="service-desc">Extract insights, facts, and structure from massive PDF or Word documents.</p>
+                <div class="service-action">
+                    <span>Open Tool</span>
+                    <i data-lucide="arrow-right" style="width: 16px; height: 16px;"></i>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="site-footer" role="contentinfo">
+        <div class="footer-container">
+            <a href="#" class="footer-brand">
+                <svg class="footer-logo" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="28" height="28" rx="7" fill="currentColor" opacity="0.1"/>
+                    <path d="M8 7h7a4.5 4.5 0 0 1 0 9H8V7Z" fill="currentColor"/>
+                    <path d="M8 16h8a4.5 4.5 0 0 1 0 9H8v-9Z" fill="currentColor" opacity="0.7"/>
+                </svg>
+                <span>Briefly</span>
+            </a>
+            
+            <ul class="footer-links">
+                <li><a href="#" class="footer-link">Privacy</a></li>
+                <li><a href="#" class="footer-link">Terms</a></li>
+                <li><a href="https://github.com" target="_blank" rel="noopener" class="footer-link">GitHub</a></li>
+                <li><a href="#" class="footer-link">Documentation</a></li>
+            </ul>
+            
+            <p class="footer-credit">
+                Made with ❤️ using <a href="https://groq.com" target="_blank" rel="noopener">Groq</a> & LLaMA 3.3
+            </p>
+        </div>
+    </footer>
+
+    <!-- Third-party Libraries -->
+    <script src="https://unpkg.com/docx@7.8.2/build/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    
+    <!-- Application Script -->
+    <script src="app.js" defer></script>
+    
+    <!-- Initialize Lucide Icons -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            if (typeof lucide !== 'undefined') {
+                lucide.createIcons();
+            }
+        });
+    </script>
+
+</body>
+</html>
